@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-08-19T10:42:45.478-05:00","modified":"2025-08-19T12:42:18.378-05:00","cssclasses":""}
+{"publish":true,"title":"SSH","created":"2025-08-19T10:42:45.478-05:00","modified":"2025-08-19T13:31:34.588-05:00","published":"2025-08-19T13:31:34.588-05:00","cssclasses":""}
 ---
 
 # SSH
