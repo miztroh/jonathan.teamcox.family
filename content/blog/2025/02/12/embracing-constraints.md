@@ -1,37 +1,18 @@
 ---
-title: Embracing Constraints
-tags:
-  - Angular
-  - Firebase
-  - Go
-  - JavaScript
-  - Lit
-  - Material-Design
-  - Node-JS
-  - PocketBase
-  - SQLite
-  - Vaadin-Router
-  - Memory-Safety
-  - Wiz
-  - TypeScript
-  - Google
-  - Microsoft
-  - Rollup
-  - NgRx
-  - RxJs
-  - IP-Development
+{"publish":true,"title":"Embracing Constraints","created":"2025-02-13T00:07:57.500-06:00","modified":"2025-08-19T12:42:36.397-05:00","tags":["Angular","Firebase","Go","JavaScript","Lit","Material-Design","Node-JS","PocketBase","SQLite","Vaadin-Router","Memory-Safety","Wiz","TypeScript","Google","Microsoft","Rollup","NgRx","RxJs","IP-Development"],"cssclasses":""}
 ---
+
 Recently, I've had to make some hard choices regarding application architecture.  Before I walk you through the things to come, let's take a step back and review the history of this app.
 
 ## Back in Time
 
-![[huey-lewis-and-the-news.png]]
+![[blog/2025/02/12/embracing-constraints/huey-lewis-and-the-news.png]]
 
 The app in question began with a [Node.js](https://nodejs.org/) and [SQLite](https://sqlite.org/) backend and web frontend comprised of [Material Design web components](https://m3.material.io/develop/web), custom [Lit](https://lit.dev/) web components, and the [Vaadin Router](https://github.com/vaadin/router).  Database maintenance (users, access, schema migrations, etc.), authentication, and routing were done manually in code.  It was far from perfect, but met the needs of the business and its users.  Eventually, poor developer ergonomics motivated me to reconsider this approach.
 
 ## Round 2
 
-![[mortal-kombat.webp]]
+![[blog/2025/02/12/embracing-constraints/mortal-kombat.webp]]
 
 By this point, I was tired of managing database maintenance, authentication, and routing.  It felt like reinventing the wheel.  As one does, I scoured the web for a solution to my problems.  That's when I discovered [PocketBase](https://pocketbase.io/).  If you've come across [Firebase](https://firebase.google.com/), PocketBase should feel familiar.  It offers a web server, a realtime database, authentication, file storage, and an admin dashboard.  As advertised, it's an "open source backend in 1 file".  Unlike Firebase, you can self-host PocketBase.  #SelfHostAllTheThings
 
@@ -41,7 +22,7 @@ I immediately set about rearchitecting the app around PocketBase.  I was excited
 
 ## You've Got Your Troubles, I've Got Mine
 
-![[argus-filch.png]]
+![[blog/2025/02/12/embracing-constraints/argus-filch.png]]
 
 The first problem was the amount of effort required to reimplement the app's API in Go.  It quickly felt like reinventing the wheel.  In truth, I was duplicating many of the efforts I had put into the Node.js backend.  While it was fun learning a new language, especially one with the benefit of [memory safety](https://en.wikipedia.org/wiki/Memory_safety), the costs outweighed the benefits.  I would need to tackle server side concerns in another way.
 
@@ -49,7 +30,7 @@ The second problem was one I did not see coming: [Google's Material web componen
 
 ## Looking at Things from a Different Angle
 
-![[angular.png]]
+![[blog/2025/02/12/embracing-constraints/angular.png]]
 
 I decided to tackle my client-side troubles first.  As Material is the design language of my app, I wasn't so quick to abandon that.  I learned that Google's [Angular](https://angular.dev/) framework has its own implementation of Material, suitably named [Angular Material](https://material.angular.io/).  *"Great!"*, I thought.  *"A full suite of ready-to-use Material web components.  Problem solved!"*.  Not so fast.
 
@@ -57,13 +38,13 @@ Angular leverages [TypeScript](https://www.typescriptlang.org/).  For years, I h
 
 ## I've Got Server-Side Problems, But TypeScript Ain't One
 
-![[typescript.png]]
+![[blog/2025/02/12/embracing-constraints/typescript.png]]
 
 As mentioned, PocketBase offers a couple of server side API options.  Go was out; Only JavaScript remained.  TypeScript is not directly supported, as it must be transpiled to JavaScript in order be executed by the PocketBase JavaScript virtual machine (JSVM).  The transpilation has to be part of the application's build process to ensure all required resources are available at runtime.  This is what Angular's ``ng build`` command does for client-side resources.  Another common tool for bundling is [Rollup](https://rollupjs.org/).  I was able to leverage Rollup to transpile my TypeScript PocketBase hooks (server-side API) at build time.  This enables development of PocketBase hooks in TypeScript, leveraging both the type definitions that PocketBase provides ***and*** the custom types from my client-side code.  Now we're cooking with gas!
 
 ## Back to the Future
 
-![[back-to-the-future.png]]
+![[blog/2025/02/12/embracing-constraints/back-to-the-future.png]]
 
 So, where does all this leave us?  Let's recap the benefits of these changes:
 

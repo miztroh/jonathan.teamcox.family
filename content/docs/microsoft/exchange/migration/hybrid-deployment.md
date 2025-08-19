@@ -1,3 +1,7 @@
+---
+{"publish":true,"created":"2025-02-10T09:30:59.797-06:00","modified":"2025-08-19T12:42:25.440-05:00","cssclasses":""}
+---
+
 ## References
 
 * [Exchange Server hybrid deployments](https://learn.microsoft.com/en-us/exchange/exchange-hybrid)
