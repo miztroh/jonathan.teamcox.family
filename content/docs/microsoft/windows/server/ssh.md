@@ -3,6 +3,7 @@
 ---
 
 
+
 # SSH
 
 1. Check Windows Firewall for an 'OpenSSH' rule.  Edit the rule or create a new one as needed.

@@ -3,6 +3,7 @@
 ---
 
 
+
 Recently, I've had to make some hard choices regarding application architecture.  Before I walk you through the things to come, let's take a step back and review the history of this app.
 
 ## Back in Time
