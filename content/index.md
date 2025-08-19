@@ -4,6 +4,7 @@
 
 
 
+
 Welcome to my corner of the public web.
 
 ## The Professional
