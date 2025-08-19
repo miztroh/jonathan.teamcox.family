@@ -2,6 +2,7 @@
 {"publish":true,"title":"Hi!  I'm Jonathan.","created":"2025-02-12","modified":"2025-08-19T13:00:13.269-05:00","published":"2025-08-19T13:00:13.269-05:00","tags":["Wife","Illinois","Azure","Windows","Linux","DevOps","DevSecOps","Kubernetes","Homestead","Chickens","Gardening","Woodworking","Refillery","Boutique-Pantry","Card-Games","Board-Games","IP-Development"],"cssclasses":""}
 ---
 
+
 Welcome to my corner of the public web.
 
 ## The Professional

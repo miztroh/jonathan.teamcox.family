@@ -2,6 +2,7 @@
 {"publish":true,"title":"SSH","created":"2025-08-19T10:42:45.478-05:00","modified":"2025-08-19T13:31:34.588-05:00","published":"2025-08-19T13:31:34.588-05:00","cssclasses":""}
 ---
 
+
 # SSH
 
 1. Check Windows Firewall for an 'OpenSSH' rule.  Edit the rule or create a new one as needed.
