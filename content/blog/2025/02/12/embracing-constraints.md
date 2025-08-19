@@ -1,6 +1,7 @@
 ---
-{"publish":true,"title":"Embracing Constraints","created":"2025-02-10T09:30:59.797-06:00","modified":"2025-08-19T12:59:58.601-05:00","published":"2025-08-19T12:59:58.601-05:00","tags":["Angular","Firebase","Go","JavaScript","Lit","Material-Design","Node-JS","PocketBase","SQLite","Vaadin-Router","Memory-Safety","Wiz","TypeScript","Google","Microsoft","Rollup","NgRx","RxJs","IP-Development"],"cssclasses":""}
+{"publish":true,"title":"Embracing Constraints","created":"2025-02-10T09:30:59.797-06:00","modified":"2025-02-10T09:30:59","published":"2025-08-19T12:59:58.601-05:00","tags":["Angular","Firebase","Go","JavaScript","Lit","Material-Design","Node-JS","PocketBase","SQLite","Vaadin-Router","Memory-Safety","Wiz","TypeScript","Google","Microsoft","Rollup","NgRx","RxJs","IP-Development"],"cssclasses":""}
 ---
+
 
 
 
