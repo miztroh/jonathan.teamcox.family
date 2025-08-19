@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Embracing Constraints","created":"2025-02-13T00:07:57.500-06:00","modified":"2025-08-19T12:42:36.397-05:00","tags":["Angular","Firebase","Go","JavaScript","Lit","Material-Design","Node-JS","PocketBase","SQLite","Vaadin-Router","Memory-Safety","Wiz","TypeScript","Google","Microsoft","Rollup","NgRx","RxJs","IP-Development"],"cssclasses":""}
+{"publish":true,"title":"Embracing Constraints","created":"2025-02-12","modified":"2025-08-19T12:59:58.601-05:00","published":"2025-08-19T12:59:58.601-05:00","tags":["Angular","Firebase","Go","JavaScript","Lit","Material-Design","Node-JS","PocketBase","SQLite","Vaadin-Router","Memory-Safety","Wiz","TypeScript","Google","Microsoft","Rollup","NgRx","RxJs","IP-Development"],"cssclasses":""}
 ---
 
 Recently, I've had to make some hard choices regarding application architecture.  Before I walk you through the things to come, let's take a step back and review the history of this app.
