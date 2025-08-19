@@ -1,0 +1,4 @@
+---
+title: Daily Note
+tags: []
+---
